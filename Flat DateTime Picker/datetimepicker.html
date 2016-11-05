@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+	<title>Test</title>
+    <meta charset="utf-8">
+	<meta name="viewport"content="width=device-width,initial-scale=1">
+    
+	<script type="text/javascript" src="demo/jquery-1.11.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="src/DateTimePicker.css" />
+	<script type="text/javascript" src="src/DateTimePicker.js"></script>
+	<script type="text/javascript" src="src/i18n/DateTimePicker-i18n.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$("#dtBox").DateTimePicker();
+	 });
+	</script>
+
+</head>
+<body>
+	<!--  Date Input  --> 
+	<p>Date : </p>
+	<input type="text" data-field="date" readonly>
+		
+	<!--  Time Input  -->
+	<p>Time : </p>
+	<input type="text" data-field="time" readonly>
+		
+	<!--  DateTime Input  -->
+	<p>DateTime : </p>
+	<input type="text" data-field="datetime" readonly>	
+
+	<div id="dtBox"></div>
+</body>
+</html>
